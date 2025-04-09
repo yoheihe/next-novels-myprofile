@@ -1,0 +1,82 @@
+/* 扉コンテナ */
+.doorContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
+  transition: opacity 1s ease-in-out;
+}
+
+/* 左右の扉 */
+.doorLeft, .doorRight {
+  width: 50vw;
+  height: 100vh;
+  background-color: #993300;
+  position: absolute;
+  top: 0;
+  transition: transform 2s ease-in-out 0.5s; /* 0.5秒遅延 */
+}
+
+.doorLeft {
+  left: 0;
+  transform-origin: left center;
+}
+
+.doorRight {
+  right: 0;
+  transform-origin: right center;
+}
+
+/* 扉が開くアニメーション */
+.open .doorLeft {
+  transform: translateX(-100%);
+}
+
+.open .doorRight {
+  transform: translateX(100%);
+}
+
+/* アニメーション完了後に消す */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* 鍵アイコン */
+.lock {
+  position: absolute;
+  top: 50%; /* 扉の中央に配置 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  cursor: pointer;
+  animation: shake 0.5s ease-in-out infinite alternate;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  z-index: 101; /* 扉の前に表示 */
+}
+
+/* 鍵解除時に消える */
+.unlocked {
+  animation: rotateUnlock 0.5s forwards;
+  opacity: 0;
+  animation-delay: 0s; /* 即座に発動 */
+}
+
+/* 鍵を揺らすアニメーション */
+@keyframes shake {
+  0% { transform: rotate(0deg) translate(-50%, -50%); }
+  100% { transform: rotate(10deg) translate(-50%, -50%); }
+}
+
+/* 鍵が回転して消えるアニメーション */
+@keyframes rotateUnlock {
+  0% { transform: rotate(0deg) scale(1) translate(-50%, -50%); opacity: 1; }
+  100% { transform: rotate(10deg) scale(0) translate(-50%, -50%); opacity: 0; }
+}

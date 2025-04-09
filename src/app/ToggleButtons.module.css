@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.stack {
+  margin-top: 20px;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+

@@ -1,4 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Next.js実行 npx create-next-app@latest プロジェクト名  
+
+MUI利用　プロジェクトフォルダに移動してから（pwdで階層確認、cdで移動） npm install @mui/material @mui/icons-material @emotion/react @emotion/styled  
+
+トップページはapp/pageに記載  
+
+（page.jsに'use client'を記述。レンダリングでエラーが発生するため）  
+
+CSSはwrapperを付与してグローバルCSSに記述  
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).  
+
+ファイル名はプレフィックスにて記述
+ファイル名とclassNameに統一性をもたせる
+
+## To Do Next
+①トップページのコンポーネント化
+・ダッシュボード、自己紹介、SNSリンクの3コンポーネントに分割
+・ダッシュボードのWorkボタンクリック時の動作修正。検索テキストボックスの表示をなくす？
+　About、Work、Contactのボタンクリック時にそれぞれのページに遷移させる
+・ページを動的にする
+②Aboutページの作成
+・画像の取得
+・レイアウト調整
+　globals.cssを当てるもCSSが崩れる。ファイルの読み込みパスが違っている。現在のファイルの位置を基準に対象ファイルまでのパスを記述する。../はひとつ上の階層を指定。
+　画像が表示されない。imgフォルダに格納されている画像のリンク設定src="/img/画像ファイル名.png"
+③Contactページの作成
+・問い合わせフォームのレイアウト
+・問い合わせ受付の機能（バックエンド）
+　npm install nodemailer
+
+<pre>
+ study/
+│── src/
+│   ├── app/
+│   │   ├── globals.css
+│── pages/
+│   ├── about.js
+</pre>
+
+2025.4.5
+・メニューバーの固定
+　MUIのAppBar position="sticky"にて実装
+・メニューのスマホ対応（レスポンシブ）
+　useMediaQuery + theme.breakpoints.down('sm') を使って画面サイズを判定
+　down('sm') → スマホ（600px以下）のときにtrue
+　isMobile フラグで表示内容を切り替え
+ ※アニメーションにするか検討（npm install framer-motion）
+・リポジトリの再作成とデータ移行
+・READMEの精査
+・リスト用のページを作成（好きな本）
 
 ## Getting Started
 

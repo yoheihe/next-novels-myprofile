@@ -1,0 +1,51 @@
+.cat {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transition: transform 1s linear;
+  animation: walk 0.5s infinite alternate ease-in-out;
+}
+
+.body {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ear {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.ear:nth-child(2) {
+  left: 25px;
+}
+
+.tail {
+  width: 30px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  border-radius: 5px;
+  transform: rotate(30deg);
+}
+
+/* 歩くようなアニメーション */
+@keyframes walk {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
