@@ -5,7 +5,7 @@ const ProfileSectionGroup = () => {
     <div className="profile-container">
       <div className="profile-image">
         <Image
-          src="/profile-main.png"
+          src="/img/profile-main.png"
           alt="Profile Image"
           width={150}
           height={150}

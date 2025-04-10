@@ -8,7 +8,7 @@ const AboutTextGroup = () => {
         <div>
         <div className="about-profile-image">
           <Image
-            src="/profile-baseball.png"
+            src="profile-baseball.png"
             alt="Baseball Image"
             width={150}
             height={150}
