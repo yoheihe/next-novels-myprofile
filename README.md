@@ -54,11 +54,11 @@ next-novels-myprofile/
 ```bash
 git clone https://github.com/yoheihe/next-novels-myprofile
 ```
-🔸上記のコマンドを実行すると、GitHub上にあるこのプロジェクトのコードをあなたのパソコンにコピー（ダウンロード）できます。
+🔸上記コマンドを実行すると、GitHub上にあるこのプロジェクトのコードをパソコンにコピー（ダウンロード）できます。
 ```
 cd next-novels-myprofile
 ```
-🔸 cd は「移動する」という意味です。クローンしたフォルダ（プロジェクトの中身）に入ります。
+🔸 cdコマンドでクローンしたフォルダ（プロジェクトの中身）に入ります。
 ```
 npm install
 ```
@@ -68,7 +68,7 @@ npm install
 npm run dev
 ```
 🔸 サーバーが立ち上がり、ブラウザでアプリを見ることができます。
-完了したら、以下のURLをブラウザで開いてください：
+完了したら、以下のURLをブラウザで開いてください。
 
 📂 http://localhost:3000
 
