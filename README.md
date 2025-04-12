@@ -53,7 +53,11 @@ next-novels-myprofile/
 ## 🚀 セットアップ方法
 ```bash
 git clone https://github.com/yoheihe/next-novels-myprofile
+```
+上記のコマンドを実行すると、GitHub上にあるこのプロジェクトのコードをあなたのパソコンにコピー（ダウンロード）できます。
+```
 cd next-novels-myprofile
+```
 npm install
 npm run dev
 ```
