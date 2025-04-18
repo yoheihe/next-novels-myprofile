@@ -44,7 +44,7 @@ next-novels-myprofile/
 ├── components/                   // 再利用可能なUIコンポーネント群
 │   ├── ButtonGroup.js
 │   ├── ProfileSectionGroup.js
-│   ├── aSakura.js
+│   ├── Sakura.js
 │
 ├── public/                       // 公開用ファイル（画像など）
 │   └── img/                      // 画像ファイルをここに保存
