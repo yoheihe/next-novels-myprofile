@@ -2,8 +2,9 @@
 
 ## 🔥 概要
 このポートフォリオは、私のスキルや実績をまとめたものです。  
-小説投稿サイトに掲載している作品を一元管理できるようにしたいと考え、ポートフォリオ作成することにしました。  
-主にReactフレームワークのNext.jsやReactUIフレームワークのMUIを使い、シンプルなレイアウトを意識して開発しました。
+小説投稿サイトに掲載している作品を一元管理できるようにしたものです。  
+主にReactフレームワークのNext.jsやReactUIフレームワークのMUIを使用。  
+シンプルなレイアウトを意識して開発しました。
 
 ## 💻 使用技術
 - フロントエンド: React（Next.js）, Material UI
@@ -43,7 +44,7 @@ next-novels-myprofile/
 ├── components/                   // 再利用可能なUIコンポーネント群
 │   ├── ButtonGroup.js
 │   ├── ProfileSectionGroup.js
-│   ├── aSakura.js
+│   ├── Sakura.js
 │
 ├── public/                       // 公開用ファイル（画像など）
 │   └── img/                      // 画像ファイルをここに保存
