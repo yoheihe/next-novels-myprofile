@@ -5,8 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 //コンポーネント使用
-import ButtonGroup from "../../../components/ButtonGroup";
-import SocialIcons from "../../../components/SocialIconGroup";
+import CommonButton from "../../../components/CommonButton";
+import CommonSocialIcon from "../../../components/CommonSocialIcon";
 import Cat from '../../../components/Cat';
 import Door from '../../../components/Door';
 
@@ -22,9 +22,9 @@ export default function WorksPage() {
     <main className="main-global">
       <Door />
 
-      <Cat />
 
-      <ButtonGroup />
+
+      <CommonButton />
 
       <h2 className="works-list">作品一覧</h2>
 
@@ -52,7 +52,7 @@ export default function WorksPage() {
         </h3>
       </div>
 
-      <SocialIcons />
+      <CommonSocialIcon />
 
     </main>
   );

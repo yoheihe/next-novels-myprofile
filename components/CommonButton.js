@@ -3,8 +3,6 @@ import { AppBar, Toolbar, Button, Menu, MenuItem, Fade, Stack, useMediaQuery } f
 import { useTheme } from '@mui/material/styles';
 import Link from 'next/link';
 
-import styles from '../src/app/globals.css';
-
 export default function ResponsiveHeader() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);

@@ -1,17 +1,14 @@
 'use client'
 import * as React from 'react';
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
-import styles from './ToggleButtons.module.css';
 
 
 //コンポーネント使用
-import ButtonGroup from "../../components/ButtonGroup";
+import CommonButton from "../../components/CommonButton";
 import ProfileSection from '../../components/ProfileSectionGroup';
-import SocialIcons from "../../components/SocialIconGroup";
+import CommonSocialIcon from "../../components/CommonSocialIcon";
 import Sakura from '../../components/Sakura'
 
-export default function ToggleButtons() {
+export default function TopPage() {
 
   return (
     <main className="main-global">
@@ -22,11 +19,11 @@ export default function ToggleButtons() {
           <h1>Welcome to My Page</h1>
         </div>
       </div>
-      <ButtonGroup />
+      <CommonButton />
 
       <ProfileSection />
 
-      <SocialIcons />
+      <CommonSocialIcon />
 
     </main>
   );

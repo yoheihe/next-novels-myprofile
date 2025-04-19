@@ -3,14 +3,14 @@ import * as React from 'react';
 import Image from 'next/image';
 
 //コンポーネント使用
-import ButtonGroup from "../../../components/ButtonGroup";
-import SocialIcons from "../../../components/SocialIconGroup";
+import CommonButton from "../../../components/CommonButton";
+import CommonSocialIcon from "../../../components/CommonSocialIcon";
 
 export default function AboutPage() {
   return (
     <main className="main-global">
 
-      <ButtonGroup />
+      <CommonButton />
 
       <div className='about-profile'>
         <div className="profile-image">
@@ -88,7 +88,7 @@ export default function AboutPage() {
       </div>
 
 
-      <SocialIcons />
+      <CommonSocialIcon />
 
     </main>
   );

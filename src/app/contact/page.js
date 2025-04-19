@@ -2,7 +2,7 @@
 import { useState } from "react"
 
 // コンポーネント使用
-import ButtonGroup from "../../../components/ButtonGroup";
+import CommonButton from "../../../components/CommonButton";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -46,7 +46,7 @@ const Contact = () => {
 
     return (
         <main className="main-global">
-            <ButtonGroup />
+            <CommonButton />
 
             <div className="contact-container">
                 <h1 className="contact-title">お問い合わせ</h1>

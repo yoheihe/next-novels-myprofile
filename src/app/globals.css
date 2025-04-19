@@ -304,4 +304,6 @@ img {
   border-radius: 50% 70% 50% 70%; /* 楕円形にする */
   opacity: 0.8;
   animation: fall linear infinite;
+  pointer-events: none; /* ボタンなどのクリックを邪魔しない */
+  z-index: 9999; /* 他の要素より前面に表示 */ 
 }
