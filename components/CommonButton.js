@@ -13,6 +13,7 @@ export default function ResponsiveHeader() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/works', label: 'Works' },
+    { href: '/reference', label: 'Reference' },
     { href: '/contact', label: 'Contact' },
   ];
 
