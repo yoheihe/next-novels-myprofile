@@ -7,8 +7,8 @@ const ProfileSectionGroup = () => {
         <Image
           src="/img/profile-main.png"
           alt="Profile Image"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
         />
       </div>
       <h1 className="profile-name">湯元みこと</h1>

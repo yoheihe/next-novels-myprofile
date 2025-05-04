@@ -61,20 +61,22 @@ img {
 }
 
 .profilleContaniner {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .profile-name {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .profile-bio {
   font-size: 18px;
   color: #555;
   line-height: 1.5;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 /* aboutページ */
@@ -215,7 +217,7 @@ img {
 .book-table th {
   padding: 12px 16px;
   border-bottom: 2px solid #ccc;
-  text-align: left;
+  text-align: center;
 }
 
 .book-table td {
@@ -233,6 +235,10 @@ img {
 }
 
 /* 検索フォームのスタイル */
+.search-form {
+  margin-bottom: 1rem;
+}
+
 .book-search {
   width: 100%;
   max-width: 500px;
@@ -261,6 +267,11 @@ img {
 
 .book-search-button:hover {
   background-color: #45a049;
+}
+
+.no-results {
+  text-align: center;
+  color: #777;
 }
 
 
