@@ -152,7 +152,7 @@ const BookList = () => {
 
       <div className="booklist-container">
         <div>
-          <h2>書籍リスト</h2>
+          <h2>好きな書籍リスト</h2>
 
           {/* 検索フォーム */}
           <div className="search-form">
@@ -175,7 +175,7 @@ const BookList = () => {
                 <th>タイトル</th>
                 <th>著者</th>
                 <th>発刊年</th>
-                <th>出版社</th>
+                <th>出版元</th>
               </tr>
             </thead>
             <tbody>
