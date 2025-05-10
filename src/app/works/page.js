@@ -7,8 +7,7 @@ import Link from 'next/link';
 //コンポーネント使用
 import CommonButton from "../../../components/CommonButton";
 import CommonSocialIcon from "../../../components/CommonSocialIcon";
-import Cat from '../../../components/Cat';
-import Door from '../../../components/Door';
+
 
 export default function WorksPage() {
 
