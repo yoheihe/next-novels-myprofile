@@ -19,7 +19,7 @@ const Contact = () => {
         }
 
         try {
-            const response = await fetch("xxx", {
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: {
                     "Accept": "application/json",
