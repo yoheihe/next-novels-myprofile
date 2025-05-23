@@ -43,6 +43,10 @@ next-novels-myprofile/
 │   │
 │   │   ├── contact/              // お問い合わせページ
 │   │   │   └── page.js
+│   │
+│   │   ├── api/                  // お問い合わせページバックエンド処理ファイル
+│   │   │   ├── contact/
+│   │   │   │   └── page.js
 │
 ├── components/                   // 再利用可能なUIコンポーネント群
 │   ├── ButtonGroup.js
